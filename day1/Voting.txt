@@ -1,0 +1,26 @@
+using System;
+					
+public class Program
+{
+	public static void Main(string[] args)
+	{
+		int age;
+		Console.WriteLine("Enter a value age");
+		age= Convert.ToInt32(Console.ReadLine());
+		
+		if(age<=60 && age>18)
+		{
+				Console.WriteLine("Vote");
+		}
+		else if(age>60)
+		{
+			Console.WriteLine("senior citizen");
+		}
+		else 
+		{
+			Console.WriteLine("Not eligible");
+		}
+		
+	}
+	
+}	

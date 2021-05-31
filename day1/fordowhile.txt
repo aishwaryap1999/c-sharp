@@ -1,0 +1,28 @@
+using System;
+					
+public class Program
+{
+	public static void Main(string[] args)
+	{
+	
+		
+		 for( int i=1;i<=10;i++)
+		 {
+		
+ 			Console.WriteLine(i);
+		 }
+		int a=10;
+		while(a<=20)
+		{
+		 	Console.WriteLine(a);
+			a++;
+		}
+		int b=30;
+		do
+		{
+			Console.WriteLine(b);
+			b++;
+		}while(b<=40);
+	    Console.ReadLine();
+	 	}
+ 	}

@@ -1,0 +1,103 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+	int i, j, k;
+            for (i = 5; i >= 1; i--)
+            {
+                for (j = 5; j > i; j--)
+                {
+                    Console.Write(" ");
+                }
+                for (k = 1; k <= i; k++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+
+            for (i = 5; i >= 1; i--)
+            {
+                for (j = 1; j < i; j++)
+                {
+                    Console.Write(" ");
+                }
+                for (k = 5; k >= i; k--)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+ }
+ }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+for (int i = 0; i < 5; i++)
+
+ {
+
+ for (int j = 0; j <i; j++)
+
+ {
+
+ Console.Write(" ");
+
+ }
+
+ for (int k = 1; k <= 5 - i; k++)
+
+ {
+
+ Console.Write("*");
+
+ }
+
+ Console.WriteLine();
+
+ }
+
+ for (int i = 1; i < 5; i++)
+
+ {
+
+ for (int j = 1; j < 5-i; j++)
+
+ {
+
+ Console.Write(" ");
+
+ }
+
+ for (int k = 1; k <= i+1; k++)
+
+ {
+
+ Console.Write("*");
+
+ }
+
+ Console.WriteLine();
+
+
+
+}

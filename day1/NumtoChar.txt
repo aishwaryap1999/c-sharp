@@ -1,0 +1,25 @@
+using System;
+					
+public class Program
+{
+	public static void Main(string[] args)
+	{
+		 int num;
+		Console.WriteLine("Enter a value age");
+		num= Convert.ToInt32(Console.ReadLine());
+		
+		if(num == 1)
+		{
+				Console.WriteLine("One");
+		}
+		else if(num == 2)
+		{
+			Console.WriteLine("Two");
+		}
+		else if(num == 3)
+		{
+			Console.WriteLine("Three");
+		}
+		Console.ReadLine();
+	 	}
+ 	}
