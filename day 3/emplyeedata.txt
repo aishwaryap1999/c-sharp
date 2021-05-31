@@ -1,0 +1,31 @@
+using System;
+					
+public class employee
+{
+	public int empid;
+	public string empname;
+}
+public class program{
+	public static void Main()
+	{
+		employee e1=new employee();
+		
+		Console.WriteLine("Enter employee id:");
+		e1.empid=Convert.ToInt32(Console.ReadLine());
+		
+		Console.WriteLine("Enter employee name:");
+		e1.empname=Console.ReadLine();
+		
+		Console.WriteLine("Employee details are:");
+		Console.WriteLine("Employee ID: "+e1.empid);
+		Console.WriteLine("Employee Name: "+e1.empname);
+		
+	}
+}
+		
+		
+
+
+      
+		
+	

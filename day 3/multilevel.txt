@@ -1,0 +1,36 @@
+using System;
+					
+public class grandfather
+{
+	public void display1()
+	{
+		Console.WriteLine("I am grandfather");
+	
+	}
+}
+class father: grandfather
+{
+ public void display2()
+ {
+   Console.WriteLine("I am father");
+ }
+}
+class son: father
+{
+ public void display3()
+ {
+   Console.WriteLine("I am son");
+ }
+}
+	
+	public class Class2
+	{
+		public static void Main()
+		{
+			son s1=new son();
+			s1.display1();
+			s1.display2();
+			s1.display3();
+			
+		}
+	}

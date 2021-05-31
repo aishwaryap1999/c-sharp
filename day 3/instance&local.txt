@@ -1,0 +1,17 @@
+using System;
+					
+public class Program
+{
+	public int a=6;  //instance variable
+	public static void Main()
+	{
+		Program p1=new Program();
+		Console.WriteLine("class variable=" +p1.a);
+		int a=5;    //local variable
+		{
+			int b=6;
+			Console.WriteLine("I am block in a main program b=" +b);
+		}
+		Console.WriteLine("I am called in main a=" +a);
+	}
+}

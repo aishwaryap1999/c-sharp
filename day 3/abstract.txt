@@ -1,0 +1,33 @@
+using System;
+
+namespace ConsoleApp2
+{
+    public abstract class A
+    {
+       public abstract void abstractShow();
+		public void nonAbstractShow()
+		{
+			Console.WriteLine("I am not abstract method");
+		}
+        
+    } 
+	class B:A
+	{
+	 public override void abstractShow()
+	 {
+	   Console.WriteLine("I am an abstract method defination on class B");
+	 }
+	}
+
+    
+
+    public class hello
+    {
+       public static void Main(string[] args)
+        {
+           B b=new B();
+		   b.abstractShow();
+		   b.nonAbstractShow();
+        }
+    }
+}

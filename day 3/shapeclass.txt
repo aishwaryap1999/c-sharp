@@ -1,0 +1,49 @@
+using System;
+
+namespace ConsoleApp2
+{
+    public class shape
+    {
+        public int length, width, side;
+
+        public void getparameters()
+        {
+            Console.WriteLine("Enter Length : ");
+            length = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Width : ");
+            width = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter side : ");
+            side = Convert.ToInt32(Console.ReadLine());
+        }
+    }
+
+    public class rectangle : shape
+    {
+        public void cal()
+        {
+            int area = length * width;
+            Console.WriteLine("Area of rectangle is: " + area);
+        }
+    }
+
+    public class square: rectangle
+    {
+        public void cal1()
+        {
+            int area1 = side * side;
+            Console.WriteLine("Area of square is: " + area1);
+        }
+    }
+
+    public class hello
+    {
+       public static void Main(string[] args)
+        {
+            square sq = new square();
+            sq.getparameters();
+            sq.cal();
+            sq.cal1();
+            Console.ReadLine();
+        }
+    }
+}

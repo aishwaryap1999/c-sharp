@@ -1,0 +1,21 @@
+using System;
+					
+public class employee
+{
+	public employee()   //constructor
+	{
+		Console.WriteLine("I am a constructor");
+	}
+	~employee()   
+	{
+		Console.WriteLine("I am a destructor");
+	}
+}
+	
+	public class Class2
+	{
+		public static void Main()
+		{
+			employee emp=new employee();
+		}
+	}

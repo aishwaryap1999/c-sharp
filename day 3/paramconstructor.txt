@@ -1,0 +1,29 @@
+using System;
+					
+public class student
+{
+	public int rollNo;
+	public string studentName;
+
+public student(int rollNo,string studentName) // parameterized constructor
+{
+this.rollNo=rollNo;
+this.studentName=studentName;
+}
+}
+
+public class program{
+	public static void Main()
+	{
+		
+		student s1=new student(12,"Ash");
+		
+	
+		
+		
+		Console.WriteLine("Student details are:");
+		Console.WriteLine("Student Roll No: "+s1.rollNo);
+		Console.WriteLine("Student Name: "+s1.studentName);
+		
+	}
+}

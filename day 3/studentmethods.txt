@@ -1,0 +1,39 @@
+using System;
+					
+public class student
+{
+	public int rollNo;
+	public string studentName;
+	
+	public void getStudentData()
+	{
+		Console.WriteLine("Enter student roll no:");
+		rollNo=Convert.ToInt32(Console.ReadLine());
+		
+		Console.WriteLine("Enter student name:");
+		studentName=Console.ReadLine();
+	}
+	public void printStudentData()
+	{
+		Console.WriteLine("Student details are:");
+		Console.WriteLine("Student Roll No: "+rollNo);
+		Console.WriteLine("Student Name: "+studentName);
+	}
+	
+}
+public class program{
+	public static void Main()
+	{
+		student s1=new student();
+		s1.getStudentData();
+		s1.printStudentData();
+		
+	}
+}
+		
+		
+
+
+      
+		
+	

@@ -1,0 +1,44 @@
+using System;
+					
+public class student
+{
+	public int rollNo;
+	public string studentName;
+	
+	public student(student st)   //copy constructor
+	{
+		rollNo=st.rollNo;
+		studentName=st.studentName;
+		
+		
+	}
+	public student(int rollNo, string studentName) //parametrized
+	{
+		this.rollNo=rollNo;
+		this.studentName=studentName;
+	}
+	public void printStudentData()
+	{
+		Console.WriteLine("Student details are:");
+		Console.WriteLine("Student Roll No: "+rollNo);
+		Console.WriteLine("Student Name: "+studentName);
+	}
+	
+}
+public class program{
+	public static void Main()
+	{
+		student st1=new student(101,"abc");
+		student st2=new student(st1);
+		
+		st2.printStudentData();
+		
+	}
+}
+		
+		
+
+
+      
+		
+	

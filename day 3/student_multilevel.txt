@@ -1,0 +1,58 @@
+using System;
+
+namespace ConsoleApp2
+{
+    public class person
+	{
+	    public int age;
+		public void greet()
+		{
+			 Console.WriteLine("Hello");
+		}
+		public void setAge(int n)
+		{
+			 age=n;
+		}
+	}
+	 class student:person
+	 {
+	  public void study()
+	  {
+	    Console.WriteLine("I am studying here");
+	  }
+	  public void showAge()
+	  {
+	    Console.WriteLine("My age is  {0} years",age);
+	  }
+	 }
+	 class teacher:student
+	 {
+	  public void explain()
+	  {
+	    Console.WriteLine("I am explaining on the screen");
+	  }
+	 }
+
+
+    public class studentProfessor
+    {
+       public static void Main(string[] args)
+        {
+		   student s=new student();
+		   s.greet();
+		   s.setAge(15);
+		   s.showAge();
+		  s.study();
+		  // t.explain();
+		   
+		   teacher t=new teacher();
+		   t.greet();
+		   t.setAge(35);
+		   t.showAge();
+		   //t.study();
+		   t.explain();
+		   
+
+        }
+    }
+}

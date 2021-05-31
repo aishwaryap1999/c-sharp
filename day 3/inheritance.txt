@@ -1,0 +1,28 @@
+using System;
+					
+public class animal
+{
+	public void eat()
+	{
+		Console.WriteLine("Dog can eat");
+	
+	}
+}
+class dog: animal
+{
+ public void bark()
+ {
+   Console.WriteLine("Dog can bark");
+ }
+}
+	
+	public class Class2
+	{
+		public static void Main()
+		{
+			dog a1=new dog();
+			a1.eat();
+			a1.bark();
+			
+		}
+	}
