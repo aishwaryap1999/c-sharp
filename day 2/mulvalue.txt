@@ -1,0 +1,19 @@
+using System;
+public class Exercise5
+{
+       public static void Main(string[] args)
+         {
+           int x = mulval(10,20,30);
+		   Console.WriteLine(x);
+		   Console.ReadLine();
+	   }
+	public static int mulval(params int[] num)
+	{
+		int Sum=0;
+		foreach(var item in num)
+		{
+			Sum = Sum +  item;
+		}
+		return Sum;
+	}
+}

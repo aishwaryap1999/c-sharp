@@ -1,0 +1,74 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+
+
+    int [,]arr =new int [2,2];
+    int [,]arr1 =new int [2,2];
+    int [,]arr2 =new int [2,2];
+    Console.Write("enter values for array 1 ");
+    for(int row=0;row<2;row++)
+    {
+        for(int col=0;col<2;col++)
+        {
+            arr[row,col]=Convert.ToInt32(Console.ReadLine());
+            
+        }
+    }
+     Console.Write("enter values for array 2 ");
+     for(int row=0;row<2;row++)
+    {
+        for(int col=0;col<2;col++)
+        {
+            arr1[row,col]=Convert.ToInt32(Console.ReadLine());
+            
+        }
+    }
+    
+    for(int row=0;row<2;row++)
+    {
+        for(int col=0;col<2;col++)
+        {
+            arr2[row,col]=arr[row,col]+arr1[row,col];
+            
+        }
+    }
+    Console.WriteLine("Array 1");
+     for(int row=0;row<2;row++)
+    {
+        for(int col=0;col<2;col++)
+        {
+            Console.Write(arr[row,col]+"\t");
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine("Array 2");
+     for(int row=0;row<2;row++)
+    {
+        for(int col=0;col<2;col++)
+        {
+            Console.Write(arr1[row,col]+"\t");
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine("sum of two arrays");
+     for(int row=0;row<2;row++)
+    {
+        for(int col=0;col<2;col++)
+        {
+            Console.Write(arr2[row,col]+"\t");
+        }
+        Console.WriteLine();
+    }
+   
+    
+  }
+         
+
+        	
+	
+}

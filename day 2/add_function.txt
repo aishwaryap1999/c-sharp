@@ -1,0 +1,18 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int a=1 , b=6;
+		int c=sum(1,6);
+		Console.WriteLine(c);
+		Console.ReadLine();
+	}
+	public static int sum(int a,int b)
+	{
+		
+		return(a+b);
+		
+ }
+}

@@ -1,0 +1,34 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+	int a,b;
+
+	  Console.WriteLine("enter val of a");
+  a=Convert.ToInt32(Console.ReadLine());
+	  Console.WriteLine("enter val of b");
+  b=Convert.ToInt32(Console.ReadLine());
+  
+  swap(a,b);
+  }
+  
+ public  static void swap(int a,int b)
+  {
+	 int temp;
+	 temp=a;
+	 a=b;
+	 b=temp;
+	 Console.WriteLine("a is:"+a);
+	 Console.WriteLine("b is:"+b);
+	 	
+		
+		
+		
+		
+
+	}
+}
+
+

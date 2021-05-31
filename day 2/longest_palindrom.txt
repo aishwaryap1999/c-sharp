@@ -1,0 +1,50 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+Console.WriteLine("aaaaaabbbccc");
+Console.WriteLine(LongestPalindrome("aaaaaabbbccc"));
+Console.ReadLine();
+} public static string LongestPalindrome(String s)
+{
+var charaaray = s.ToCharArray();
+var bool_arr = new bool[charaaray.Length, charaaray.Length];
+int longest_start = 0;
+int max_length = 1;
+for (int i = 0; i < charaaray.Length; i++)
+{
+bool_arr[i, i] = true;
+}
+for (int i = 0; i < charaaray.Length-1; i++)
+{
+if(charaaray[i]== charaaray[i + 1])
+{
+bool_arr[i, i + 1] = true;
+longest_start = i;
+max_length = 2;
+}
+}
+for (int length = 3; length <= charaaray.Length; length++)
+{
+for (int i = 0; i < charaaray.Length-length+1; i++)
+{
+int j = i + length - 1;
+if(charaaray[i] == charaaray[j] && bool_arr[i+1,j-1])
+{
+bool_arr[i, j] = true;
+if (max_length < (j - i))
+{
+max_length = j - i;
+longest_start = i;
+}
+}
+}
+} return s.Substring(longest_start,max_length);
+
+
+
+	}
+}

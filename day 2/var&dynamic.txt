@@ -1,0 +1,21 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		  //const int i= 2;
+//var and dynamic keyword 
+//var i = "2";
+// var i = 2.200; 
+//i= Convert.ToInt32("3");
+
+dynamic i = 2;
+i = "Vikash";
+Console.WriteLine(i);
+Console.ReadLine();
+
+        
+	
+}
+}

@@ -1,0 +1,30 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+	   int y=5, z=7;
+		//named parameter
+		 swap(a:y,b:z,x:7);
+		 Console.WriteLine("Values in main function after swapping");
+		 Console.WriteLine("a=" +y + "b= " +z);
+		Console.ReadLine();
+	}
+	public static void swap(int a,int b,int x)
+	{
+		int c=a;
+		a=b;
+		b=c;
+		 Console.WriteLine("Values in swap function after swapping");
+		Console.WriteLine("a= "+a+ "b= "+b);
+	}
+		
+		
+		
+		
+
+	
+}
+
+

@@ -1,0 +1,104 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		
+
+
+        Console.WriteLine("Select you option \n 1. Add \n 2.sub \n 3.mul \n 4.division");
+
+        int op=Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Enter First number: ");
+
+        int a=Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Enter Second number: ");
+
+        int b=Convert.ToInt32(Console.ReadLine());
+
+        switch(op)
+
+        {
+
+            case 1:
+
+                int s=sum(a,b);
+
+                Console.WriteLine("Addition of Two numbers is: "+s);
+		 break;
+
+            case 2:
+
+                int sb=sub(a,b);
+
+                Console.WriteLine("Substraction of 2 numbers is:"+sb);
+
+				break;
+
+            case 3:
+
+                int m=mul(a,b);
+
+                Console.WriteLine("Multiplication of two numbers:"+m);
+
+			break;
+
+            case 4:
+
+                int d=div(a,b);
+
+                Console.WriteLine("Division of two numbers: "+d);
+
+				break;
+
+           default:
+
+                Console.WriteLine("enter valid option");
+
+                 break;
+
+        }
+
+    }
+
+    public static int sum(int a,int b)
+
+{
+
+        return (a+b);
+
+    }
+
+        public static int sub(int a,int b)
+
+{
+
+        return (a-b);
+
+    }
+
+        public static int mul(int a,int b)
+
+    {
+
+        return (a*b);
+
+    }
+
+        public static int div(int a,int b)
+
+    {
+
+        return (a/b);
+
+	}
+
+}
+
+
+
+
+

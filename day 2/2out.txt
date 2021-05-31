@@ -1,0 +1,27 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+	    int a=5;
+	  int b=9;	
+	  int c,d;
+	sum(a,b,out c,out d);
+	  Console.WriteLine("add is "+c);
+	  Console.WriteLine("mul is "+d);
+  }
+	
+public static void sum (int a , int b,out int x,out int y)	
+{
+	x=a-b;
+	y=a*b;
+}
+		
+		
+		
+
+	
+}
+
+
