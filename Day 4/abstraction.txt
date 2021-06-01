@@ -1,0 +1,27 @@
+using System;
+
+class Emp
+{
+	//data hiding
+
+	private static int counter;
+	public Emp()
+	{
+		counter++;
+	}
+	public static int ctr
+	{
+		get{return counter;}
+	}
+}
+public class main
+{
+	public static void Main(string[]args)
+	{
+		Emp emp1 = new Emp();
+		Emp emp2 = new Emp();
+		Emp emp3 = new Emp();
+		Console.WriteLine(Emp.ctr);
+		Console.ReadLine();
+	}
+}
