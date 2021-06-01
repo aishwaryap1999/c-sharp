@@ -1,0 +1,37 @@
+using System;
+					
+public class program
+{
+	int a=6,b=7;
+	
+	public void mul()
+	{
+		Console.WriteLine("Multiplication is:"+(a*b));
+	}
+	
+	public void mul(int a,int b)
+	{
+		Console.WriteLine("Multiplication is:"+(a*b));
+	}
+	
+	public int mul(int a,int b,int c)
+	{
+		return (a*b*c);
+	}
+	
+	public void mul(string a,string b)
+	{
+		Console.WriteLine("Multiplication is:" +(Convert.ToInt32(a) * Convert.ToInt32(b)));
+	}
+	
+	
+	public static void Main()
+	{
+		program p=new program();
+		p.mul();
+		p.mul(4,5);
+	    Console.WriteLine(p.mul(1,2,3));
+		p.mul(4,9);
+		
+	}
+}

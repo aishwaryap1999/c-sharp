@@ -1,0 +1,29 @@
+using System;
+	public class baseclass
+	{
+		public virtual void Print()
+		{
+			Console.WriteLine("Base class");
+		}
+	}
+	public class DerivedClass:baseclass
+	{
+		
+			public override void Print()
+		{
+			base.Print();
+			Console.WriteLine("Derived class");
+		}
+	}
+	
+	public class class1
+	{
+	
+		public static void Main()
+		{
+			DerivedClass d = new DerivedClass();
+			d.Print();
+			Console.ReadLine();
+			
+		}
+}

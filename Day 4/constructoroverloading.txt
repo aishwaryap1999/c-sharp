@@ -1,0 +1,37 @@
+using System;
+	public class ClassA
+	{
+		int n1, n2;
+		
+		public ClassA()
+		{
+			Console.WriteLine("Base class Constructor");
+		}
+		public ClassA(int i, int j)
+		{
+			n1 = i;
+			n2 = j;
+			Console.WriteLine("Parameterized Constructor Invoked");
+			Console.WriteLine("Values are "+n1+" and "+n2);
+		}
+	}
+	public class DerivedClass:ClassA
+	{
+		
+			public DerivedClass() : base() { }
+			public DerivedClass(int i,int j) : base(i,j) { }
+		
+	}
+	
+	public class class1
+	{
+	
+		public static void Main()
+		{
+			DerivedClass d = new DerivedClass();
+			DerivedClass d2 = new DerivedClass(10,20);
+
+			Console.ReadLine();
+			
+		}
+}

@@ -1,0 +1,30 @@
+using System;
+	public class baseclass
+	{
+		public void Print()
+		{
+			Console.WriteLine("Base class");
+		}
+	}
+	public class DerivedClass:baseclass
+	{
+		
+			public void Print()
+		{
+			Console.WriteLine("Derived class");
+		}
+	}
+	
+	public class class1
+	{
+	
+		public static void Main()
+		{
+	
+			DerivedClass Dc = new DerivedClass();
+			Dc.Print();
+			baseclass Bc = new baseclass();
+			Bc.Print();
+			Console.ReadLine();
+		}
+}
