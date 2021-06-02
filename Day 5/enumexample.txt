@@ -1,0 +1,28 @@
+using System;
+
+//enum use interger
+
+ 
+    public enum Week
+    {
+		//Normal 0
+		//excellent 1
+		//default = 0
+		//good = 3
+		Sunday, Monday,Tue,Thur,Fri,Sat
+	}
+	public class program
+	{
+		
+		 public static void Main()
+        {
+			// Console.WriteLine("{0} {1}","X","Y");
+			 Console.WriteLine("Day of week {0}  {1}",Convert.ToInt32(Week.Sunday),Week.Sunday);
+		     Console.WriteLine("Day of week {0}  {1}", (int)Week.Monday,Week.Monday);
+		     Console.WriteLine("Day of week {0}  {1}", (int)Week.Tue,Week.Tue);
+
+			 Console.ReadLine();
+				
+		
+		 }		    
+			}

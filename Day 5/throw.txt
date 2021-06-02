@@ -1,0 +1,18 @@
+using System;
+
+	
+	public class Program{
+ 	public static void Main()
+	{
+		string classSample=null;
+		if(classSample==null)
+		{
+			throw new Exception();
+		}
+		else
+		{
+			Console.WriteLine("Perform my task");
+		}
+		
+	}
+	}

@@ -1,0 +1,35 @@
+using System;
+
+	
+	public class Program
+	{
+ 	public static void Main()
+	{
+		int a=5;
+		int[] arr = new int[2];
+		try{
+			Console.WriteLine(arr[2]);
+            }
+		catch(IndexOutOfRangeException e)
+		{
+			try
+			{
+			}
+			catch
+			{
+			}
+					Console.WriteLine("exception is : "+e.Message+"\n StackTrace:" +e.Message);
+
+		}
+		catch(Exception ex) //unlimited exception
+		{
+		Console.WriteLine("exception is : "+ex.Message+"\n StackTrace:" +ex.Message);
+		}
+		
+		//int c=a/0;
+		finally{
+			Console.WriteLine("I am finally block");
+		}
+            Console.ReadLine();
+	}
+	}
