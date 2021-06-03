@@ -1,0 +1,50 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+			
+public class A
+{
+public static void Main()
+{
+  //1.ArrayList
+            ArrayList arrayList = new ArrayList();
+            arrayList.Add("Vikash");
+            arrayList.Add("Soham");
+            arrayList.Add(1);
+            arrayList.Remove(1);
+            for (int i = 0; i < arrayList.Count; i++)
+            {
+                Console.WriteLine(arrayList[i]);
+            }
+            //2.Hashtable
+            Hashtable hashtable = new Hashtable();
+            hashtable.Add(101,"Vikash");
+            hashtable.Add(102, "Raj");
+            hashtable.Add(103, "Sujan Singh");
+            ICollection keys = hashtable.Keys;
+            foreach (var item in keys)
+            {
+                Console.WriteLine(item +":-" + hashtable[item]);
+            }
+
+ 
+
+            //3Queue
+            Queue queue = new Queue();
+            queue.Enqueue("C#");
+            queue.Enqueue("PHP");
+            queue.Enqueue("JAVA");
+            queue.Dequeue();
+            Console.WriteLine(queue.Peek());
+            //4.Stack
+
+ 
+
+            Stack stack = new Stack();
+            stack.Push("C#");
+            stack.Push("PHP");
+            stack.Push("JAVA");
+            stack.Pop();
+            Console.WriteLine(stack.Peek());
+}
+}

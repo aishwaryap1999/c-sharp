@@ -1,0 +1,17 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+			
+public class A
+{
+public static void Main()
+{
+	        //List
+			List<int> vs = new List<int>(); //similar to ArrayList Class
+			Queue<int> vs1 = new Queue<int>();
+			Stack<int> vs2 = new Stack<int>(); 
+			HashSet<int> vs3 = new HashSet<int>();
+			LinkedList<int> vs4= new LinkedList<int>() ;
+		
+}
+}

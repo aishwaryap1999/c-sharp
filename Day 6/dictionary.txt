@@ -1,0 +1,25 @@
+//Topic: Dictionary
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+			
+public class A
+{
+public static void Main()
+{
+      Dictionary<int, string> keyValuePairs= new Dictionary<int, string>();
+	    keyValuePairs.Add(1, "Vikash");
+        keyValuePairs.Remove(1);
+		keyValuePairs.Add(2, "Sonham Sen");
+		keyValuePairs.Add(3, "Anjali Kumari");
+
+		foreach (var item in keyValuePairs)
+         {
+           Console.WriteLine(item);
+		 }
+
+		Console.ReadLine();
+
+}
+}

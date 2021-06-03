@@ -1,0 +1,20 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+			
+public class A
+{
+public static void Main()
+{
+       // System.Collections
+		System.Collections.Stack stack1= new System.Collections.Stack(); 
+		stack1.Push(1);
+		int x1 = (int)stack1.Pop();
+
+		//System.Collections.Generic;
+		Stack<int> stack = new Stack<int>();
+		stack.Push(1);
+		int x = stack.Pop();
+		
+}
+}
